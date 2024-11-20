@@ -1,7 +1,7 @@
 import { generateId } from "@/core/shared/utils";
 import { EventI } from "../model/events";
 
-export const baseEvent = (): Partial<EventI> => {
+export const createEmptyEvent = (): Partial<EventI> => {
   return {
     name: "",
     image: "",
