@@ -1,7 +1,7 @@
-import { Event } from "../events";
-import { generateId } from "../shared";
+import { EventI } from "../events";
+import { generateId } from "../shared/utils";
 
-export const evets: Event[] = [
+export const evets: EventI[] = [
   {
     id: generateId(),
     eventSlug: "evento-fullstack",

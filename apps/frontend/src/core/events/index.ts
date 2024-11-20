@@ -1,3 +1,4 @@
-import { Event, Guest } from "./model/events";
+import { EventI, GuestI } from "./model/events";
 
-export type { Event, Guest };
+export type { EventI, GuestI };
+

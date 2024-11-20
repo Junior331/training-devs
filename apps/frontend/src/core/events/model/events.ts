@@ -1,4 +1,4 @@
-export interface Guest {
+export interface GuestI {
   id: string;
   name: string;
   email: string;
@@ -6,12 +6,12 @@ export interface Guest {
   hasAccompaniments: boolean;
   accompanimentsQuantity: number;
 }
-export interface Event {
+export interface EventI {
   id: string;
   data: Date;
   name: string;
   image: string;
-  guests: Guest[];
+  guests: GuestI[];
   password: string;
   location: string;
   eventSlug: string;
