@@ -1,4 +1,1 @@
-import { generateId } from "./RandomId";
-
-export { generateId };
-
+export * as utils from "./utils";
