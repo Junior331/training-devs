@@ -14,7 +14,7 @@
 
 - Clone o repositório com
   ```
-  git clone https://github.com/Junior331/training_devs.git
+  git clone https://github.com/Junior331/training-devs.git
   ```
 - É necessario ter o Node 20x ou superior instalado
 - Para iniciar o servidor de desenvolvimento rode os comandos abaixo
