@@ -2,7 +2,7 @@
 
 ## App
 
-<!-- - https://training-devs.vercel.app/ -->
+- https://training-devs.vercel.app/
 
 ## Principais Tecnologias utilizadas
 
