@@ -1,13 +1,13 @@
-import convidados from "./convidados.svg";
-import confirmados from "./confirmados.svg";
-import acompanhantes from "./acompanhantes.svg";
+import guests from "./guests.svg";
+import confirmeds from "./confirmeds.svg";
+import accompaniments from "./accompaniments.svg";
 import fallback from "../images/image_not_found.png";
 
 export const icons = {
   fallback,
-  convidados,
-  confirmados,
-  acompanhantes,
+  guests,
+  confirmeds,
+  accompaniments,
 };
 type IIcons = keyof typeof icons;
 

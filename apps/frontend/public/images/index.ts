@@ -1,14 +1,16 @@
 import logo from "./logo.svg";
-import elementos from "./elementos.png";
+import elements from "./elements.png";
 import background from "./background.png";
 import fallback from "./image_not_found.png";
-import backgroundElementos from "./background-elementos.svg";
+import backgroundInitial from "./background-initial.svg";
+import backgroundElementos from "./background-elements.svg";
 
 export const images = {
   logo,
   fallback,
-  elementos,
+  elements,
   background,
+  backgroundInitial,
   backgroundElementos,
 };
 
