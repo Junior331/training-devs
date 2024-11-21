@@ -3,7 +3,7 @@ import { EventI } from "../model/events";
 export const validateEvent = (eventPartial: Partial<EventI>): string[] => {
   const requiredFields = {
     name: "Name is required",
-    data: "Data is required",
+    date: "Date is required",
     image: "Image is required",
     eventSlug: "Event slug is required",
     location: "Location is required",

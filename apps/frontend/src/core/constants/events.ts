@@ -1,9 +1,8 @@
 import { EventI } from "../events";
-import { generateId } from "../shared/utils";
 
-export const evets: EventI[] = [
+export const events: EventI[] = [
   {
-    id: generateId(),
+    id: "xdlhnq5lwm-esmllp6nie-hzgl0ajulz7"  ,
     eventSlug: "evento-fullstack",
     password: "senha123",
     name: "Evento de Desenvolvimento Fullstack",
@@ -18,7 +17,7 @@ export const evets: EventI[] = [
     expectedAudience: 200,
     guests: [
       {
-        id: generateId(),
+        id: "h1g2x30pglq-2qy7mc3nd8h-qq494djtbcq",
         name: "Alice Silva",
         email: "alice@example.com",
         confirmed: true,
@@ -26,7 +25,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 1,
       },
       {
-        id: generateId(),
+        id: "unzgczdy0gp-uqljtf756de-ibfnezyz5f" ,
         name: "Carlos Pereira",
         email: "carlos@example.com",
         confirmed: false,
@@ -34,7 +33,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 0,
       },
       {
-        id: generateId(),
+        id: "hqzmy1wi9gl-rgmibulirh-1k2twwu6waj" ,
         name: "Beatriz Lima",
         email: "beatriz@example.com",
         confirmed: true,
@@ -44,7 +43,7 @@ export const evets: EventI[] = [
     ],
   },
   {
-    id: generateId(),
+    id: "2kis8yvhcvv-8um289gg1x5-zw08j0ciytk",
     eventSlug: "evento-js-avancado",
     password: "js2024",
     name: "Workshop Avançado de JavaScript",
@@ -58,7 +57,7 @@ export const evets: EventI[] = [
     expectedAudience: 100,
     guests: [
       {
-        id: generateId(),
+        id: "epy7dvzdn-h5ffojxd8xf-4u3dbflvkcs"  ,
         name: "Eduardo Santos",
         email: "eduardo@example.com",
         confirmed: true,
@@ -66,7 +65,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 0,
       },
       {
-        id: generateId(),
+        id: "q5pb671a0e-3a1txyighat-sbu67d47s8"  ,
         name: "Fernanda Costa",
         email: "fernanda@example.com",
         confirmed: true,
@@ -76,7 +75,7 @@ export const evets: EventI[] = [
     ],
   },
   {
-    id: generateId(),
+    id: "5nef2v2sxhl-80hjydv7qd5-fddre4x4oyr",
     eventSlug: "evento-dev-frontend",
     password: "front123",
     name: "Bootcamp de Desenvolvimento Frontend",
@@ -90,7 +89,7 @@ export const evets: EventI[] = [
     expectedAudience: 150,
     guests: [
       {
-        id: generateId(),
+        id: "8tpp19ouoqi-6nm51io1n5a-lw6itbwufu" ,
         name: "Gabriela Rocha",
         email: "gabriela@example.com",
         confirmed: true,
@@ -98,7 +97,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 1,
       },
       {
-        id: generateId(),
+        id: "a22ufkd5y2-6quz4dv5wln-qbbzwq551zs" ,
         name: "Hugo Nogueira",
         email: "hugo@example.com",
         confirmed: false,
@@ -106,7 +105,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 0,
       },
       {
-        id: generateId(),
+        id: "cyy99oylu4w-s6c387plg5k-uyieywntrh" ,
         name: "Isabela Martins",
         email: "isabela@example.com",
         confirmed: true,
@@ -116,7 +115,7 @@ export const evets: EventI[] = [
     ],
   },
   {
-    id: generateId(),
+    id: "oz9uvdydcd-nql21g818sa-dwvqulair8l" ,
     eventSlug: "casamento-alberto-marina",
     password: "casamento2024",
     name: "Casamento do Alberto e Marina",
@@ -131,7 +130,7 @@ export const evets: EventI[] = [
     expectedAudience: 150,
     guests: [
       {
-        id: generateId(),
+        id: "6odwyyikpiu-4rm8d4upd7a-2ve4yb8dq2" ,
         name: "Bruno Cardoso",
         email: "bruno@example.com",
         confirmed: true,
@@ -139,7 +138,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 1,
       },
       {
-        id: generateId(),
+        id: "eg7lxxznuva-d4cnx48ijqt-iz6xznoo5ts",
         name: "Carla Mendes",
         email: "carla@example.com",
         confirmed: true,
@@ -149,7 +148,7 @@ export const evets: EventI[] = [
     ],
   },
   {
-    id: generateId(),
+    id: "muowo4f7k89-b93nq8qxqqd-0noa74ohiw9",
     eventSlug: "aniversario-joao",
     password: "joao2024",
     name: "Aniversário do João - 30 Anos",
@@ -164,7 +163,7 @@ export const evets: EventI[] = [
     expectedAudience: 80,
     guests: [
       {
-        id: generateId(),
+        id: "ir1r1ucu2od-461dkhc72tm-ydo4met07uj",
         name: "Maria Souza",
         email: "maria@example.com",
         confirmed: true,
@@ -172,7 +171,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 2,
       },
       {
-        id: generateId(),
+        id: "95qacnirxwr-ffuhv3s0nd9-nsu3rl4djee",
         name: "José Almeida",
         email: "jose@example.com",
         confirmed: false,
@@ -182,7 +181,7 @@ export const evets: EventI[] = [
     ],
   },
   {
-    id: generateId(),
+    id: "81ks0oozc35-ljvo5a8rqzg-qt28hdn6vge",
     eventSlug: "inauguracao-loja-estrela",
     password: "estrela2024",
     name: "Inauguração da Loja Estrela",
@@ -197,7 +196,7 @@ export const evets: EventI[] = [
     expectedAudience: 300,
     guests: [
       {
-        id: generateId(),
+        id: "c1a5x0qgus-cfswa77ods5-z4nn6bezylp" ,
         name: "Cláudia Lima",
         email: "claudia@example.com",
         confirmed: true,
@@ -205,7 +204,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 3,
       },
       {
-        id: generateId(),
+        id: "npsgd64c31a-c30fsot6cpk-sbsuwwahdda",
         name: "Ricardo Barbosa",
         email: "ricardo@example.com",
         confirmed: true,
@@ -215,7 +214,7 @@ export const evets: EventI[] = [
     ],
   },
   {
-    id: generateId(),
+    id: "i3sg2jyquog-vnku4n38v4-6dibxujxr56" ,
     eventSlug: "reuniao-familia-oliveira",
     password: "familia2024",
     name: "Reunião da Família Oliveira",
@@ -229,7 +228,7 @@ export const evets: EventI[] = [
     expectedAudience: 50,
     guests: [
       {
-        id: generateId(),
+        id: "oqsjw6lyayh-q9b8sxtkvu-9cmebgi34ru" ,
         name: "Thiago Oliveira",
         email: "thiago@example.com",
         confirmed: true,
@@ -237,7 +236,7 @@ export const evets: EventI[] = [
         accompanimentsQuantity: 4,
       },
       {
-        id: generateId(),
+        id: "1wrml69nqd7-re2ywt674ic-vw5dbfxoj4q",
         name: "Letícia Oliveira",
         email: "leticia@example.com",
         confirmed: true,
@@ -247,4 +246,4 @@ export const evets: EventI[] = [
     ],
   },
 ];
-
+   

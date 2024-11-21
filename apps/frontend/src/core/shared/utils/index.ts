@@ -1,12 +1,12 @@
 import { generateId } from "./RandomId";
 import { formatEventSlug } from "./EventSlug";
 import { generatePassword } from "./Password";
-import { formatData, unformatData } from "./Data";
+import { formatDate, unformatDate } from "./Date";
 
 export {
   generateId,
-  formatData,
-  unformatData,
+  formatDate,
+  unformatDate,
   formatEventSlug,
   generatePassword,
 };
