@@ -1,0 +1,59 @@
+GET http://localhost:4000/events
+
+###
+GET http://localhost:4000/events/semana-formacao-dev
+
+###
+GET http://localhost:4000/events/3a588693-650e-4c6d-868e-9090ff5c07b3
+
+###
+GET http://localhost:4000/events/validate/evento-fullstack/21ff36d7-8fa7-495e-9339-d1687458b660
+
+###
+POST http://localhost:4000/events/access
+Content-Type: application/json
+
+{
+    "id": "21ff36d7-8fa7-495e-9339-d1687458b660",
+    "password": "senha1234"
+}
+
+###
+POST http://localhost:4000/events/evento-fullstack/guest
+Content-Type: application/json
+
+{
+    "id": "83deb50f-12cc-4bed-84f6-6a3829a581dd",
+    "name": "Jaja Test 11",
+    "email": "jaja@example.com",
+    "confirmed": true,
+    "hasAccompaniments": true,
+    "accompanimentsQuantity": 12 
+}
+
+###
+
+###
+POST http://localhost:4000/events
+Content-Type: application/json
+
+{
+    "data": "2025-12-31T23:00",
+    "name": "Evento Semana Formação.DEV",
+    "image": "https://www.formacao.dev/assets/img/formacao-dev.png",
+    "password": "frameworks2025",
+    "location": "Rio de Janeiro",
+    "eventSlug": "semana-formacao-dev",
+    "description": "Evento de tecnologia",
+    "imageBackground": "https://www.formacao.dev/assets/img/formacao-dev-background.png",
+    "expectedAudience": 1000,
+    "guests": [
+        {
+            "name": "Jaja Test",
+            "email": "jaja@example.com",
+            "confirmed": true,
+            "hasAccompaniments": true,
+            "accompanimentsQuantity": 12 
+        }
+    ]
+}

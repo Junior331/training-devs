@@ -2,7 +2,7 @@ import { EventI } from "../events";
 
 export const events: EventI[] = [
   {
-    id: "xdlhnq5lwm-esmllp6nie-hzgl0ajulz7"  ,
+    id: "21ff36d7-8fa7-495e-9339-d1687458b660",
     eventSlug: "evento-fullstack",
     password: "senha123",
     name: "Evento de Desenvolvimento Fullstack",
@@ -17,7 +17,7 @@ export const events: EventI[] = [
     expectedAudience: 200,
     guests: [
       {
-        id: "h1g2x30pglq-2qy7mc3nd8h-qq494djtbcq",
+        id: "9db594ba-2015-4126-923b-9453d7edd552",
         name: "Alice Silva",
         email: "alice@example.com",
         confirmed: true,
@@ -25,7 +25,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 1,
       },
       {
-        id: "unzgczdy0gp-uqljtf756de-ibfnezyz5f" ,
+        id: "7f76598d-5025-45d7-950a-45dbc52307ab",
         name: "Carlos Pereira",
         email: "carlos@example.com",
         confirmed: false,
@@ -33,7 +33,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 0,
       },
       {
-        id: "hqzmy1wi9gl-rgmibulirh-1k2twwu6waj" ,
+        id: "be33b1e3-6d44-45d3-80dc-c9a4b61e389a",
         name: "Beatriz Lima",
         email: "beatriz@example.com",
         confirmed: true,
@@ -43,7 +43,7 @@ export const events: EventI[] = [
     ],
   },
   {
-    id: "2kis8yvhcvv-8um289gg1x5-zw08j0ciytk",
+    id: "f4b18eb7-13c6-4bde-aa26-a9551a5c31f2",
     eventSlug: "evento-js-avancado",
     password: "js2024",
     name: "Workshop Avançado de JavaScript",
@@ -57,7 +57,7 @@ export const events: EventI[] = [
     expectedAudience: 100,
     guests: [
       {
-        id: "epy7dvzdn-h5ffojxd8xf-4u3dbflvkcs"  ,
+        id: "ce7781f9-ce90-480b-b33f-79551b436b30",
         name: "Eduardo Santos",
         email: "eduardo@example.com",
         confirmed: true,
@@ -65,7 +65,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 0,
       },
       {
-        id: "q5pb671a0e-3a1txyighat-sbu67d47s8"  ,
+        id: "89fe8fda-bdd2-4a0c-aa4c-efed7a4da7a7",
         name: "Fernanda Costa",
         email: "fernanda@example.com",
         confirmed: true,
@@ -75,7 +75,7 @@ export const events: EventI[] = [
     ],
   },
   {
-    id: "5nef2v2sxhl-80hjydv7qd5-fddre4x4oyr",
+    id: "3a588693-650e-4c6d-868e-9090ff5c07b3",
     eventSlug: "evento-dev-frontend",
     password: "front123",
     name: "Bootcamp de Desenvolvimento Frontend",
@@ -89,7 +89,7 @@ export const events: EventI[] = [
     expectedAudience: 150,
     guests: [
       {
-        id: "8tpp19ouoqi-6nm51io1n5a-lw6itbwufu" ,
+        id: "961e8ef3-8492-4bb6-8e99-4e07d175a18c",
         name: "Gabriela Rocha",
         email: "gabriela@example.com",
         confirmed: true,
@@ -97,7 +97,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 1,
       },
       {
-        id: "a22ufkd5y2-6quz4dv5wln-qbbzwq551zs" ,
+        id: "c9807f9f-d3c8-4dee-b49c-ae09cf3329e8",
         name: "Hugo Nogueira",
         email: "hugo@example.com",
         confirmed: false,
@@ -105,7 +105,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 0,
       },
       {
-        id: "cyy99oylu4w-s6c387plg5k-uyieywntrh" ,
+        id: "d4f25df3-bd22-4b1d-a6ba-c8fd625ef117",
         name: "Isabela Martins",
         email: "isabela@example.com",
         confirmed: true,
@@ -115,7 +115,7 @@ export const events: EventI[] = [
     ],
   },
   {
-    id: "oz9uvdydcd-nql21g818sa-dwvqulair8l" ,
+    id: "7a0a5640-8e46-404d-bd90-dcba6589d57c",
     eventSlug: "casamento-alberto-marina",
     password: "casamento2024",
     name: "Casamento do Alberto e Marina",
@@ -130,7 +130,7 @@ export const events: EventI[] = [
     expectedAudience: 150,
     guests: [
       {
-        id: "6odwyyikpiu-4rm8d4upd7a-2ve4yb8dq2" ,
+        id: "c7f15188-0f9a-454e-8d05-694308106b21",
         name: "Bruno Cardoso",
         email: "bruno@example.com",
         confirmed: true,
@@ -138,7 +138,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 1,
       },
       {
-        id: "eg7lxxznuva-d4cnx48ijqt-iz6xznoo5ts",
+        id: "384493ec-f538-4af0-95bb-eff54a17d7eb",
         name: "Carla Mendes",
         email: "carla@example.com",
         confirmed: true,
@@ -148,7 +148,7 @@ export const events: EventI[] = [
     ],
   },
   {
-    id: "muowo4f7k89-b93nq8qxqqd-0noa74ohiw9",
+    id: "5e25282b-cde5-45ff-9436-c4320d7c2f6f",
     eventSlug: "aniversario-joao",
     password: "joao2024",
     name: "Aniversário do João - 30 Anos",
@@ -163,7 +163,7 @@ export const events: EventI[] = [
     expectedAudience: 80,
     guests: [
       {
-        id: "ir1r1ucu2od-461dkhc72tm-ydo4met07uj",
+        id: "62f27c65-d52e-4e4b-aeb1-e6c861539806",
         name: "Maria Souza",
         email: "maria@example.com",
         confirmed: true,
@@ -171,7 +171,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 2,
       },
       {
-        id: "95qacnirxwr-ffuhv3s0nd9-nsu3rl4djee",
+        id: "eb5d60e7-ee91-4d6f-8365-33a2ef65ffd7",
         name: "José Almeida",
         email: "jose@example.com",
         confirmed: false,
@@ -181,7 +181,7 @@ export const events: EventI[] = [
     ],
   },
   {
-    id: "81ks0oozc35-ljvo5a8rqzg-qt28hdn6vge",
+    id: "53ae44ec-30fb-4e5a-9b0b-a9fbedd8e3c1",
     eventSlug: "inauguracao-loja-estrela",
     password: "estrela2024",
     name: "Inauguração da Loja Estrela",
@@ -196,7 +196,7 @@ export const events: EventI[] = [
     expectedAudience: 300,
     guests: [
       {
-        id: "c1a5x0qgus-cfswa77ods5-z4nn6bezylp" ,
+        id: "56d33644-21e0-45d6-8374-b63492542957",
         name: "Cláudia Lima",
         email: "claudia@example.com",
         confirmed: true,
@@ -204,7 +204,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 3,
       },
       {
-        id: "npsgd64c31a-c30fsot6cpk-sbsuwwahdda",
+        id: "08ce7902-a86f-4991-97bc-8cf5661fa328",
         name: "Ricardo Barbosa",
         email: "ricardo@example.com",
         confirmed: true,
@@ -214,7 +214,7 @@ export const events: EventI[] = [
     ],
   },
   {
-    id: "i3sg2jyquog-vnku4n38v4-6dibxujxr56" ,
+    id: "65965e1c-8055-4795-b4a3-da93bbe97e31",
     eventSlug: "reuniao-familia-oliveira",
     password: "familia2024",
     name: "Reunião da Família Oliveira",
@@ -228,7 +228,7 @@ export const events: EventI[] = [
     expectedAudience: 50,
     guests: [
       {
-        id: "oqsjw6lyayh-q9b8sxtkvu-9cmebgi34ru" ,
+        id: "70aad3a8-3307-4b4b-a8c6-a3796b7aef66",
         name: "Thiago Oliveira",
         email: "thiago@example.com",
         confirmed: true,
@@ -236,7 +236,7 @@ export const events: EventI[] = [
         accompanimentsQuantity: 4,
       },
       {
-        id: "1wrml69nqd7-re2ywt674ic-vw5dbfxoj4q",
+        id: "5cf2c395-a931-4234-889f-7a8701c8e5fc",
         name: "Letícia Oliveira",
         email: "leticia@example.com",
         confirmed: true,
@@ -246,4 +246,3 @@ export const events: EventI[] = [
     ],
   },
 ];
-   
