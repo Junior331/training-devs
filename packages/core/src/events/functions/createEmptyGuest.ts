@@ -1,5 +1,5 @@
-import { generateId } from "@/core/shared/utils";
 import { GuestI } from "../model/events";
+import { generateId } from "../../shared/utils";
 
 export const createEmptyGuest = (): GuestI => {
   return {

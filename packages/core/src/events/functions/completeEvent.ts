@@ -1,7 +1,6 @@
 import { EventI } from "../model/events";
-import { generateId } from "@/core/shared/utils";
 import { validateEvent } from "./validateEvent";
-import { generatePassword } from "@/core/shared/utils";
+import { generateId, generatePassword } from "../../shared/utils";
 
 export const completeEvent = (eventPartial: Partial<EventI>): EventI => {
 

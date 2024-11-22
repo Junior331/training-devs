@@ -1,6 +1,7 @@
-import { EventI } from "@/core/events";
-import { Logo } from "@/components/index";
 import Link from "next/link";
+
+import { EventI } from "core";
+import { Logo } from "@/components/index";
 
 export default function Home() {
   const e: Partial<EventI> = {};

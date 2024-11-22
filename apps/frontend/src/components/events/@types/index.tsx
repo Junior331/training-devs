@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
-import { EventI, GuestI } from "@/core";
+import { EventI, GuestI } from "core";
 
 interface GenericProps {
   event: EventI;

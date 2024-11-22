@@ -1,5 +1,5 @@
-import { generateId } from "@/core/shared/utils";
 import { EventI } from "../model/events";
+import { generateId } from "../../shared/utils";
 
 export const createEmptyEvent = (): Partial<EventI> => {
   return {

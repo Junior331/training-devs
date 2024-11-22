@@ -1,4 +1,4 @@
-import { EventI, GuestI } from "@/core";
+import { EventI, GuestI } from "core";
 
 export const getEvent = ({
   id,

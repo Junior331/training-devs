@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { EventI, events, GuestI } from "@/core";
+import { EventI, events, GuestI } from "core";
 import DashboardEvent from "@/components/events/DashboardEvent";
 import FormPasswordEvent from "@/components/events/FormPasswordEvent";
 import { filterAbsent, filterPresents, getEvent, totalGeneral } from "./utils";
