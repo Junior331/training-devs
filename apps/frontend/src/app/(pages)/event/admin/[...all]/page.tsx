@@ -1,52 +1,62 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { EventI, events, GuestI } from "core";
-import DashboardEvent from "@/components/events/DashboardEvent";
-import FormPasswordEvent from "@/components/events/FormPasswordEvent";
-import { filterAbsent, filterPresents, getEvent, totalGeneral } from "./utils";
+import { DashboardEvent } from "@/components/events/DashboardEvent";
+import { FormPasswordEvent } from "@/components/events/FormPasswordEvent";
+import { useAPI } from "@/data/hooks/useAPI";
 
 export default function EventsAdmin() {
+  const { httpPost } = useAPI();
   const { all } = useParams();
-  const [event, setEvent] = useState<EventI | null>(null);
-  const [presents, setPresents] = useState<GuestI[]>([]);
-  const [absent, setAbsent] = useState<GuestI[]>([]);
-  const [allGeneral, setAllGeneral] = useState<number>(0);
-  const [password] = useState<string | null>(all?.[1] ?? null);
 
   const id = all?.[0];
-  
+  const [event, setEvent] = useState<EventI | null>(null);
+  const [password, setPassword] = useState<string | null>(all?.[1] ?? null);
+
+  const presents = event?.guests.filter((c) => c.confirmed) ?? [];
+  const absent = event?.guests.filter((c) => !c.confirmed) ?? [];
+
+  const totalGeneral =
+    presents?.reduce((total: number, guest: GuestI) => {
+      return total + guest.accompanimentsQuantity + 1;
+    }, 0) ?? 0;
+
+  const listEvent = () => {
+    const event = events.find((ev) => ev.id === id && ev.password === password);
+    setEvent(event ?? null);
+  };
+
+  const getEvent = useCallback(async () => {
+    if (!id || !password) return;
+    const evento = await httpPost("/events/access", { id, password });
+    setEvent(evento);
+  }, [httpPost, id, password]);
+
   useEffect(() => {
-    const eventFind = getEvent({ id: id ?? "", password, events });
-    if(!eventFind) return;
-    const presentsFilterd = filterPresents({ event: eventFind});
-    const absentFilterd = filterAbsent({ event: eventFind });
-    const totalGeneralFilterd = totalGeneral({ event: eventFind });
-
-    setEvent(eventFind ?? null);
-    setAbsent(absentFilterd ?? []);
-    setPresents(presentsFilterd ?? []);
-    setAllGeneral(totalGeneralFilterd ?? 0);
-
+    listEvent();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, password]);
 
   return (
     <div className="flex flex-col items-center">
       {event ? (
-        <>
-          <DashboardEvent
-            event={event}
-            absent={absent}
-            presents={presents}
-            totalGeneral={allGeneral}
-          />
-        </>
+        <DashboardEvent
+          event={event}
+          absent={absent}
+          presents={presents}
+          totalGeneral={totalGeneral}
+          updateListGuests={getEvent}
+        />
       ) : (
-        <>
-          <FormPasswordEvent />
-        </>
+        <FormPasswordEvent
+          accessEvent={getEvent}
+          password={password || ""}
+          setPassword={setPassword}
+        />
       )}
     </div>
   );

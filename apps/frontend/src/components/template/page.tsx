@@ -6,7 +6,7 @@ export const Template = ({ children, className }: TemplateProps) => {
     <div
       className={`
       flex flex-col items-center py-10 min-h-screen bg-[url('/images/background.png')]
-      bg-cover bg-center bg-no-repeat`}
+      bg-cover bg-center bg-no-repeat bg-background`}
     >
       <Logo />
       <main

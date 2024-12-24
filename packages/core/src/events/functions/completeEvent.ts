@@ -9,12 +9,12 @@ export const completeEvent = (eventPartial: Partial<EventI>): EventI => {
     throw new Error(errors.join("\n"));
   }
 
-  const evento: EventI = {
+  const event: EventI = {
     ...eventPartial,
     id: eventPartial.id ?? generateId(),
     password: eventPartial.password ?? generatePassword(12),
     expectedAudience: +(eventPartial.expectedAudience ?? 1),
   } as EventI;
 
-  return evento;
+  return event;
 };

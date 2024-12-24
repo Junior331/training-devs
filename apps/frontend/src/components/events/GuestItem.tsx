@@ -1,6 +1,6 @@
 import { GuestItemProps } from "./@types";
 
-export default function GuestItem({ guest }: GuestItemProps) {
+export const GuestItem = ({ guest }: GuestItemProps) => {
   return (
     <li className="flex justify-between bg-black/40 rounded-md px-6 py-3 border border-zinc-800">
       <div className="flex flex-col">
@@ -9,8 +9,10 @@ export default function GuestItem({ guest }: GuestItemProps) {
       </div>
       <div className="flex flex-col items-end">
         <span className="text-sm text-zinc-400">Escorts</span>
-        <span className="text-xl font-bold">{guest.accompanimentsQuantity}</span>
+        <span className="text-xl font-bold">
+          {guest.accompanimentsQuantity}
+        </span>
       </div>
     </li>
   );
-}
+};

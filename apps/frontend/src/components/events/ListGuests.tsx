@@ -1,8 +1,7 @@
 import { ListGuestsProps } from "./@types";
-import GuestItem from "./GuestItem";
+import { GuestItem } from "./GuestItem";
 
-
-export default function ListGuests({ guests }: ListGuestsProps) {
+export const ListGuests = ({ guests }: ListGuestsProps) => {
   return (
     <div>
       <ul className="flex flex-col gap-2">
@@ -12,4 +11,4 @@ export default function ListGuests({ guests }: ListGuestsProps) {
       </ul>
     </div>
   );
-}
+};

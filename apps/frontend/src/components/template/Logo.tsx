@@ -17,14 +17,14 @@ export const Logo = ({ isLarge = false }: { isLarge?: boolean }) => {
           className={`flex flex-col items-center gap-2 ${fonte.className}`}
         >
           <Image src={images.logo.src} width={100} height={100} alt="Logo" />
-          <h1 className="text-5xl">
+          <h1 className="text-5xl text-primary">
             CONVIT<span className="text-blue-500">3</span> DIGITAL
           </h1>
         </Link>
       ) : (
         <Link href="/" className={`flex items-center gap-2 ${fonte.className}`}>
           <Image src={images.logo.src} width={50} height={50} alt="Logo" />
-          <h1 className="flex flex-col items-center text-lg leading-5">
+          <h1 className="flex flex-col items-center text-lg leading-5 text-primary">
             <div>
               CONVIT<span className="text-blue-500">3</span>
             </div>

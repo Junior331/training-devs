@@ -1,16 +1,15 @@
-import InfoEvent from "./InfoEvent";
-import ListGuests from "./ListGuests";
-import { Statistics } from "../shared";
-import AccessByQrCode from "./AccessByQrCode";
-import { DashboardEventProps } from "./@types";
 import { icons } from "../../../public/icons";
+import { DashboardEventProps } from "./@types";
+import { Statistics } from "@/components/shared";
+import { AccessByQrCode, InfoEvent, ListGuests } from "@/components/events";
 
-export default function DashboardEvento({
+export const DashboardEvent = ({
   event,
   absent,
   presents,
   totalGeneral,
-}: DashboardEventProps) {
+  updateListGuests,
+}: DashboardEventProps) => {
   return (
     <div className="flex flex-col gap-2">
       <div className="flex gap-2 self-stretch">
@@ -19,35 +18,38 @@ export default function DashboardEvento({
       </div>
       <div className="grid grid-cols-3 gap-6 mt-4">
         <Statistics
-          text="Guest Expectations:"
+          text="Expectativa de Convidados:"
           value={event.expectedAudience}
           image={icons.guests}
         />
         <Statistics
-          text="Confirmations:"
+          text="Confirmações:"
           value={presents.length}
           image={icons.confirmeds}
         />
         <Statistics
-          text="Total Confirmed:"
+          text="Total Confirmado:"
           value={totalGeneral}
           image={icons.accompaniments}
         />
       </div>
 
-      <button className="button blue self-end mt-12">
-        <span>Update guest list</span>
+      <button
+        onClick={updateListGuests}
+        className="button blue self-end mt-12"
+      >
+        <span>Atualizar Lista de Convidados</span>
       </button>
 
       <span className="flex py-2 text-xl font-bold text-white/80">
-        Guests who have confirmed their PRESENCE
+        Convidados que confimaram PRESENÇA
       </span>
       <ListGuests guests={presents} />
 
       <span className="flex py-2 text-xl font-bold text-white/80">
-        Guests who have confirmed their ABSENCE
+        Convidados que confirmaram AUSÊNCIA
       </span>
       <ListGuests guests={absent} />
     </div>
   );
-}
+};
